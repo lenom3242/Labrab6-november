@@ -36,8 +36,7 @@ public:
 	void voice(int bark) {
 		cout << "My name is " << name;
 		for (int i = 0; i < bark; i++)
-			cout << " Bark!";
-		cout << endl;
+			cout << " Bark!\n";
 	}
 	Dog(string name = "Sharik", int age = 1, int loyalty = 100) : loyalty(loyalty), Animal(name, age) {}
 };
