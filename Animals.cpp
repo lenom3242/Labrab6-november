@@ -44,8 +44,8 @@ public:
 class CatDog : public Cat, public Dog {
 public:
 	void information(int catmeow, int dogbark) {
-		cout << "Cat's name: " << Cat::name << endl << "Dog's name: " << Dog::name << endl << "Cat's age: " << Cat::age << " Dog's age: " << Dog::age << "\nChance of trickery: " << Cat::trickery
-			<< " Chance of betrayal:" << Dog::loyalty << endl;
+		cout << "Cat's name: " << Cat::name << endl << "Dog's name: " << Dog::name << endl << "Cat's age: " << Cat::age << " Dog's age: " << Dog::age << "\nChance of trickery: " << 100-Cat::trickery
+			<< " Chance of betrayal:" << 100-Dog::loyalty << endl;
 		Cat::voice(catmeow);
 		Dog::voice(dogbark);
 	}
