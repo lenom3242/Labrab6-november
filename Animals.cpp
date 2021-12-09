@@ -36,14 +36,14 @@ public:
 	void voice(int bark) {
 		cout << "My name is " << name;
 		for (int i = 0; i < bark; i++)
-			cout << " Bark!\n";
+			cout << " Bark!";
 	}
 	Dog(string name = "Sharik", int age = 1, int loyalty = 100) : loyalty(loyalty), Animal(name, age) {}
 };
 class CatDog : public Cat, public Dog {
 public:
 	void information(int catmeow, int dogbark) {
-		cout << "Cat's name: " << Cat::name << endl << "Dog's name: " << Dog::name << endl << "Cat's age: " << Cat::age << " Dog's age: " << Dog::age << "\nChance of trickery: " << 100-Cat::trickery
+		cout << "Cat's name: " << Cat::name << endl << "Dog's name: " << Dog::name << endl << "Cat's age: " << Cat::age << " Dog's age: " << Dog::age << "\nChance of trickery: " << Cat::trickery
 			<< " Chance of betrayal:" << 100-Dog::loyalty << endl;
 		Cat::voice(catmeow);
 		Dog::voice(dogbark);
